@@ -1,0 +1,35 @@
+@import '~antd/dist/antd.less';
+
+.item-box {
+  padding: 16px;
+  background-color: #fff;
+  border-left: 6px solid #bbc8d9;
+  .name {
+    color: #bbc8d9;
+  }
+  &>.value{
+    font-size: 24px;
+  }
+  .rate-wrap{
+    display: flex;
+    align-items:center ;
+    .rate-item {
+      display: flex;
+      align-items: center;
+      &:not(:last-child){
+        margin-right: 16px;
+      }
+      &.mom>.value{
+        color: red;
+      }
+      &.yoy>.value{
+        color: green;
+      }
+    }
+      
+  }
+}
+
+
+
+
